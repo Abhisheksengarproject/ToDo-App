@@ -73,6 +73,7 @@ function TodoItem({ todo }) {
             onKeyDown={() => handleDelete()}
             tabIndex={0}
             role="button"
+            aria-label="Delete Todo" // Added aria-label for accessibility
           >
             <MdDelete />
           </div>
@@ -82,6 +83,7 @@ function TodoItem({ todo }) {
             onKeyDown={() => handleUpdate()}
             tabIndex={0}
             role="button"
+            aria-label="Edit Todo" // Added aria-label for accessibility
           >
             <MdEdit />
           </div>
